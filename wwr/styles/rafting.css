@@ -17,47 +17,11 @@
     box-sizing: border-box;
 }
 
-.logo {
-    width: 100px;
-    height: auto;
-    margin: 1px;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 3fr;
-    align-items: center;
-    justify-items: center;
-}
-
-.navigation {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-
-}
-
-.navigation li {
-    flex: 1 1 0;
-
-}
-
-.navigation a {
-    display: block;
-    color: inherit;
-    padding: 0px 50px 0px 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 1.1rem;
-    white-space: nowrap;
-}
-
-.navigation a:hover {
-    color: white;
-    text-decoration: underline;
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
 }
 
 body {
@@ -76,9 +40,95 @@ h1,
 h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
+}
+
+/* ================ NAVIGATION - BAR - CSS============ */
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+    margin: 1px;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
 
 }
 
+.navigation li {
+    flex: 1 1 auto;
+
+}
+
+.navigation a {
+    display: block;
+    color: inherit;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.1rem;
+    white-space: nowrap;
+}
+
+.navigation a:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+/* ================================ */
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: white;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    background-color: var(--accent2-color);
+    margin: 0px;
+    font-size: small;
+    opacity: 0.90;
+    color: #112A46;
+}
+
+.hero article img {
+    width: 130px;
+    box-shadow: 0px 0px 20px 5px rgba(79, 121, 66, 1);
+    border: 1px solid var(--secondary-color);
+    height: auto;
+    float: right;
+    margin: 10px;
+}
+
+/* ================ HISTORY - SECTION - CSS ================== */
 .history {
     display: grid;
     grid-template-columns: 1fr 200px 1fr;
@@ -118,38 +168,42 @@ h2 {
     grid-row: 2;
 }
 
-.adventure {
+/*================================ Galery CSS ===========================*/
+.galery-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 50px 1fr;
-    justify-items: center;
+}
+
+.galery-container h2 {
+    text-align: center;
 }
 
 .galery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.galery figure {
+.card {
+    height: auto;
     border: 2px solid var(--primary-color);
-    margin: 0px 15px 0px 0px;
     box-shadow: 0px 0px 5px 1px var(--primary-color);
     background-color: var(--accent1-color);
 }
 
-.galery figure:hover {
+.card:hover {
     box-shadow: 0px 0px 15px 3px var(--primary-color);
 }
 
-.galery img {
+.card img {
     width: 140px;
     height: auto;
     object-fit: cover;
 }
 
-.galery figcaption {
+.card figcaption {
     color: white;
     text-align: center;
     padding: 5px;
@@ -157,70 +211,16 @@ h2 {
 
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
-    padding: 8px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: white;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    padding: 15px;
-    background-color: var(--accent2-color);
-    margin: 0px;
-    font-size: small;
-    opacity: 0.90;
-    color: #112A46;
-}
-
-.hero article img {
-    width: 130px;
-    box-shadow: 0px 0px 20px 5px rgba(79, 121, 66, 1);
-    border: 1px solid var(--secondary-color);
-    height: auto;
-    float: right;
-    margin: 10px;
-}
-
+/*========================= FOOTER CSS ===================== */
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
     border: 1px solid black;
 }
 
 footer p {
-    text-align: center;
     color: var(--accent2-color);
     font-size: small;
 
@@ -229,6 +229,10 @@ footer p {
 .socialmedia {
     justify-content: flex-end;
 
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
 
 .socialmedia img {
