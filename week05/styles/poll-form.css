@@ -1,0 +1,136 @@
+:root {
+    --primary-color: #0A192F;
+    --secondary-color: #212529;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    background-color: aliceblue;
+}
+
+header {
+    width: 100%;
+    margin: 15px 0px;
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input,
+select,
+textarea {
+    font-size: 0.8em;
+    padding: 2px;
+    margin: 5px;
+}
+
+textarea {
+    margin-top: 15px;
+}
+
+label[for="feedback"] {
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    display: grid;
+    width: 550px;
+    height: 650px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #4A5568;
+    border-radius: 25px;
+    background-color: white;
+    gap: 10px;
+}
+
+fieldset {
+    display: grid;
+    gap: 20px;
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-size: medium;
+    font-weight: bold;
+}
+
+.personal-info,
+.questions {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+label {
+    font-size: 0.7em;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+select {
+    font-style: italic;
+}
+
+input[type="checkbox"] {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: bottom;
+}
+
+button {
+    border-radius: 20px;
+    margin: 15px;
+    background-color: #6B5B95;
+    color: white;
+    padding: 10px;
+    font-size: medium;
+    font-weight: bold;
+    box-shadow: 0 0 3px 1px black;
+}
+
+button:hover {
+    box-shadow: 0 0 6px 1px black;
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 2px;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 2px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: small;
+    background-color: var(--secondary-color);
+}
