@@ -23,22 +23,74 @@
             </ul>
         </nav>
     </header>
-    <!-- =================================================================================== -->
+    <!-- ===============================form and informatioN==================================================== -->
     <main>
-        <section class="contact-us">
-            <h2>White Water Rafting Company</h2>
-            <address>
-                123 Main River Sreet<br>
-                Kolob, California<br>
-                +1 999 999 9999<br>
-                info@whitewater.com
-            </address>
+        <section class="contact-container">
+            <div class="contact-info">
+                <div class="contact-title">
+                    <h2>White Water Rafting Company</h2>
+                </div>
+                <address>
+                    123 Main River Sreet<br>
+                    Kolob, California<br>
+                    +1 999 999 9999<br>
+                    info@whitewater.com
+                </address>
+                </>
+                <div class="contact-form-map">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3275.4188101074333!2d-68.4473606!3d-34.820561100000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679bcb735d50371%3A0xc4e24ab35cd15293!2sKewen%20Aventura%20%7C%20Rafting%20San%20Rafael!5e0!3m2!1ses-419!2spe!4v1790820920648!5m2!1ses-419!2spe"
+                      width="600" height="450" allowfullscreen="" loading="lazy"
+                      referrerpolicy="strict-origin-when-cross-origin"></iframe>
 
+                    <form>
+                        <div class="form-item column-form">
+                            <label for="name">Name (*)</label>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                        <div class="form-item column-form">
+                            <label for="useremail">Email (*)</label>
+                            <input type="email" name="useremail" id="useremail" required>
+                        </div>
+                        <fieldset>
+                            <p class="field-label">Message Purpose</p>
+                            <div class="purpose-options">
+                                <div>
+                                    <input type="radio" name="purpose" id="general" value="general"
+                                      checked>
+                                    <label for="general">General Inquiry</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="purpose" id="reservation"
+                                      value="reservation">
+                                    <label for="reservation">Reservation Question</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="purpose" id="suggestion"
+                                      value="suggestion">
+                                    <label for="suggestion">Website Suggestion</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-item message-area">
+                            <label for="message">Message(*)</label>
+                            <textarea name="message" id="message" required></textarea>
+                        </div>
+                        <div>
+                            <label for="subscription"><input type="checkbox" name="subscription"
+                                  id="subscription" value="subscribe"><span>Please Subscribe me to
+                                    the
+                                    monthyly
+                                    newsletter</span></label>
+                        </div>
+                        <button type="submit">Get in Touch!</button>
+                    </form>
+                </div>
         </section>
 
         <!--==================== GALERY CONTAINER============= -->
         <section class="galery-container">
-            <h2>Adventure Awaits You!</h2>
+            <h2>We Are Here to Serve You</h2>
             <figure class="galery">
                 <figure class="card"><img src="images/galery-01.webp" alt="family rafting">
                     <figcaption>Zambezi River</figcaption>
@@ -50,14 +102,6 @@
                 <figure class="card"><img src="images/galery-03.webp"
                       alt="single person rafting with a camera in the helmet">
                     <figcaption>Grand Canyon </figcaption>
-                </figure>
-                <figure class="card"><img src="images/galery-04.webp"
-                      alt="Family ending their rafting">
-                    <figcaption>Sun Koshi River</figcaption>
-                </figure>
-                <figure class="card"><img src="images/galery-05.webp"
-                      alt="Five woman in a rafting together">
-                    <figcaption>Gauley River</figcaption>
                 </figure>
             </figure>
         </section>
