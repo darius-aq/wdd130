@@ -94,7 +94,7 @@ header {
     border-top: 3px solid #3399FF;
 }
 
-/* ================================ */
+/* ===============Hero Image================= */
 
 .hero {
     position: relative;
@@ -135,6 +135,59 @@ header {
     height: auto;
     float: right;
     margin: 10px;
+}
+
+/* ****************************************** HOME PAGE ======================================== */
+.home-page {
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: auto;
+}
+
+.hero .home-title {
+    top: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding-top: 35%;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: var(--accent1-color);
+    background-color: color-mix(in srgb, var(--secondary-color) 20%, transparent);
+}
+
+.hero .slogan-container {
+    bottom: 20px;
+    width: 100%;
+    padding: 20px;
+    background-color: color-mix(in srgb, var(--secondary-color) 80%, transparent);
+    margin: 0px;
+    font-size: small;
+    opacity: 1;
+    color: var(--accent1-color);
+    border: 1px solid var(--secondary-color);
+
+}
+
+.slogan-container p {
+    font-size: 1.4rem;
+    line-height: 1rem;
+    padding: 0px;
+    font-weight: 900;
+    margin: 0px 0px 18px 30px;
+    font-weight: 100;
+    -webkit-text-stroke: 1px #fff;
+    letter-spacing: 3px;
+}
+
+.slogan-container button {
+    background-color: var(--primary-color);
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 0;
+    margin: 0px 30px;
+    letter-spacing: 2px;
 }
 
 /* ================ HISTORY - SECTION - CSS ================== */
@@ -366,6 +419,47 @@ button {
 
 button:hover {
     box-shadow: 0 0 3px 2px #3399FF;
+}
+
+/* ================================FORM NEWSLETTER================================ */
+.newsletter-container {
+    display: grid;
+    grid-template-columns: 1fr 0.9fr;
+    margin: 0px;
+    padding: 0px;
+    gap: 20px;
+    align-items: center;
+}
+
+.newsletter {
+    gap: 5px;
+    width: 100%;
+    margin: 20px 0px;
+}
+
+.newsletter p {
+    font-size: 0.8rem;
+    margin: 10px 0px;
+    padding: 0;
+}
+
+.newsletter label[for="name"],
+.newsletter label[for="email"] {
+    font-size: 0.8rem;
+}
+
+.newsletter input {
+    height: 1.7rem;
+    width: 50%;
+    font-size: 0.8rem;
+    padding: 0px 10px;
+}
+
+.newsletter-container img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 5px;
 }
 
 /*========================= FOOTER CSS ===================== */

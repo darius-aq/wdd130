@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Darius Cesar Arocutipa Quispe">
     <meta name="description"
-      content="Learn more about us, see pictures of different costumers reactions in our rafting experiences and learn about our history">
-    <title>About Us - White Water Rafting</title>
+      content="Experience amazing rafting adventures with White Water Rafting. Safe guided trip. Check our different trips and offered guides">
+    <title>Home - White Water Rafting</title>
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <img src="images/wwr-logo.png" alt="White Water Rafting logo" class="logo">
         <nav>
@@ -23,18 +24,19 @@
             </ul>
         </nav>
     </header>
+    <!--  Home page content-->
     <main>
-        <div class="hero">
-            <img src="images/hero-image.webp" alt="A family doing rafting">
-            <h1>About Us - White Water Rafting</h1>
-            <article>
-                <img src="images/happy-custmers.webp" alt="Happy customers after rafting">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias earum porro
-                    architecto dolor non. Culpa suscipit expedita possimus perferendis ea nulla
-                    deserunt
-                    eos odio, reiciendis ex eius similique omnis quae.</p>
+        <div class="hero home-page">
+            <img src="images/home_hero_image.webp"
+              alt="Group of friends doing rafting with a guide">
+            <h1 class="home-title">White Water Rafting</h1>
+            <article class="slogan-container">
+                <p>Experience the Unforgettable Together</p>
+                <a href="trips.html"><button>FIND YOUR FIT</button></a>
             </article>
         </div>
+
+
         <section class="history">
             <h2>History</h2>
             <p class="history-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem
@@ -47,31 +49,43 @@
                 adipisci ad provident commodi nemo nobis eveniet excepturi dolore ab dicta minus
                 reprehenderit consequatur, nihil itaque repudiandae! Est, unde.</p>
         </section>
+
         <!--==================== GALERY CONTAINER============= -->
         <section class="galery-container">
-            <h2>Adventure Awaits You!</h2>
+            <h2>Enhance your Experience</h2>
             <figure class="galery">
-                <figure class="card"><img src="images/galery-01.webp" alt="family rafting">
+                <figure class="card"><img src="images/rent_offer.webp" alt="family rafting">
                     <figcaption>Zambezi River</figcaption>
                 </figure>
-                <figure class="card"><img src="images/galery-02.webp"
-                      alt="group of friends going up a waterfall">
+                <figure class="card"><img src="images/guides_offer.webp"
+                      alt="Group of friends going up a waterfall">
                     <figcaption>Futaleufú River</figcaption>
                 </figure>
-                <figure class="card"><img src="images/galery-03.webp"
+                <figure class="card"><img src="images/camping_offer.webp"
                       alt="single person rafting with a camera in the helmet">
                     <figcaption>Grand Canyon </figcaption>
                 </figure>
-                <figure class="card"><img src="images/galery-04.webp"
-                      alt="Family ending their rafting">
-                    <figcaption>Sun Koshi River</figcaption>
-                </figure>
-                <figure class="card"><img src="images/galery-05.webp"
-                      alt="Five woman in a rafting together">
-                    <figcaption>Gauley River</figcaption>
-                </figure>
             </figure>
         </section>
+        <section class="newsletter-container">
+            <form class="newsletter">
+                <h3>Email Newsletter</h3>
+                <p>Get season updates, <strong>latest rafting iteneries and updates</strong>. Be
+                    informed of future offers.</p>
+                <div>
+                    <label for="name">Name(*)</label>
+                    <input type="text" name="name" id="name" required>
+                    <button type="submit">Subscribe</button>
+                </div>
+
+                <div>
+                    <label for="email">Email(*)</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+            </form>
+            <img src="images/newsletter_image.webp" alt="">
+        </section>
+
     </main>
     <footer>
         <p>&copy; White Water Rafting - Darius Arocutipa - 2026</p>
